@@ -186,5 +186,8 @@ fabric.properties
 # that are supposed to be shared within teams.
 
 node_modules/
+.env
+*.pyc
+migrations/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,webstorm+all,pycharm+all,database
