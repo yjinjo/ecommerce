@@ -6,8 +6,7 @@ class Product(models.Model):
     # User : Product = 1 : N
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=200, null=True, blank=True)
-    # TODO: need file upload system: pillow
-    # image =
+    image = models.ImageField(null=True, blank=True)
     brand = models.CharField(max_length=200, null=True, blank=True)
     category = models.CharField(max_length=200, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
